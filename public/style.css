@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(185, 41%, 84%);
+}
+
+.body{
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main{
+    max-width: 1200px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    padding: 20px 40px 20px 20px;
+}
+
+.data_container{
+    width: 100%;
+}
+
+.data_title{
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: hsl(186, 14%, 43%);
+    width: 100%;
+}
+
+.data_title2{
+    margin-bottom: 40px;
+}
+
+.data_title h3{
+    font-family: 'Space Mono', monospace;
+    font-size: 20px;
+    float: left;
+}
+
+.nonvalid_span{
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 20px;
+    float: right;
+    color:hsl(29, 68%, 49%);
+    display: none
+}
+
+.show{
+    display: inline-block;
+}
+
+.input{
+    color: hsl(180, 61%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 30px;
+    width: 100%;
+    height: 50px; 
+    padding: 0 20px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 8px;
+}
+ 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input:focus{
+    outline: none;
+    border: hsl(172, 67%, 45%) solid 3px;
+}
+
+.nonvalid{
+    border: hsl(29, 68%, 49%) solid 3px;
+}
+
+.input_logo{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 20px;
+    width: 15px;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.bill, .persons{
+    text-align: right;
+}
+
+.button_porcent{
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    padding: 10px;
+    text-align: center;
+    background-color: hsl(180, 61%, 15%);
+    color: white;
+    width: 30% ;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.button_porcent:hover{
+    color: hsl(180, 61%, 15%);
+    background-color:  hsl(172, 67%, 45%);
+}
+
+.active{
+    color: hsl(180, 61%, 15%);
+    background-color:  hsl(172, 67%, 45%);
+}
+
+.button_porcent_c{
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    color: hsl(180, 61%, 15%);
+    width: 30% ;
+    background-color: hsl(189, 41%, 97%);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s all;
+}
+
+.button_porcent_c:focus{
+    outline: none;
+    box-shadow: inset 0 0 0 3px #20A291;
+}
+
+.input_button{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(180, 61%, 15%);
+    border: none;
+}
+
+.results{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(180, 61%, 15%);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+.tip_amount{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.tip_amount label{
+    font-family: 'Space Mono', monospace;
+    font-size: 45px;
+    font-weight: 700;
+    float: right;
+    color: hsl(172, 67%, 45%);
+}
+
+.btn_reset{
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: hsl(180, 61%, 15%);
+    background-color: hsl(172, 67%, 45%);
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+.btn_reset:hover{
+    background-color: hsla(172, 95%, 62%, 0.993);
+
+}
+
+.tip_amount p span{
+    color: white;
+}
+
+.tip_amount p{
+    color:hsl(184, 14%, 56%);
+}
+
+a{
+    text-decoration: none;
+    color: hsl(186, 14%, 43%);
+    transition: 0.3s all;
+}
+
+a:hover{
+    color: hsl(172, 67%, 45%);
+}
+
+footer{
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    color:hsl(183, 100%, 15%);
+    width: 300px;
+}
+@media screen and (max-width: 800px){
+   
+
+    .logo{
+        margin-top: 40px;
+    }
+
+    .card{
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+
+    .nonvalid_span{
+        float: left;
+    }
+    .main{
+        width: 95%;
+    }
+
+    .card{
+        height: fit-content;
+        width: 100%;
+    }
+
+    .data_container{
+        margin-bottom: 50px;
+    }
+
+    .button_porcent, .button_porcent_c{
+        width: 48%;
+    }
+
+    .data{
+        padding: 0;
+       width: 100%;
+   }
+
+   .results{
+       width: 100%;
+   }
+
+   .tip_amount label{
+    font-size: 40px;
+    }
+
+    .data_title h3, .data_title{
+        font-size: 17px;
+    }
+
+   .tip_amount p{
+
+    font-size: 15px;
+   }
+
+}
